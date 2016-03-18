@@ -55,10 +55,6 @@ describe('GET /api/getPosts', function () {
       .set('Accept', 'application/json')
       .end(function (err, res) {
         Post.find().exec(function (err, posts) {
-          console.log('-----------------');
-          console.log(posts.length);
-          console.log(res.body.posts);
-          console.log('-----------------');
           expect(posts.length).to.equal(res.body.posts.length);
           done();
         });
