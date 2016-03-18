@@ -81,11 +81,11 @@ app.use((req, res, next) => {
     if (err) {
       return res.status(500).end('Internal server error');
     }
-    
+
     if (redirectLocation) {
       return res.redirect(302, redirectLocation.pathname + redirectLocation.search);
     }
-    
+
     if (!renderProps) {
       return next();
     }

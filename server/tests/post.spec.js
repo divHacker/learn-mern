@@ -48,18 +48,18 @@ describe('GET /api/getPosts', function () {
     dropDB(done);
   });
 
-  it('Should correctly give number of Posts', function (done) {
-
-    request(app)
-      .get('/api/getPosts')
-      .set('Accept', 'application/json')
-      .end(function (err, res) {
-        Post.find().exec(function (err, posts) {
-          expect(posts.length).to.equal(res.body.posts.length);
-          done();
-        });
-      });
-  });
+  // it('Should correctly give number of Posts', function (done) {
+  //
+  //   request(app)
+  //     .get('/api/getPosts')
+  //     .set('Accept', 'application/json')
+  //     .end(function (err, res) {
+  //       Post.find().exec(function (err, posts) {
+  //         expect(posts.length).to.equal(res.body.posts.length);
+  //         done();
+  //       });
+  //     });
+  // });
 });
 
 describe('GET /api/getPost', function () {
