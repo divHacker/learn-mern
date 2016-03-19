@@ -14,9 +14,6 @@ MERN is a scaffolding tool which makes it easy to build isomorphic apps using Mo
 ## Quickstart
 
 ```
-  npm install -g mern-cli
-  mern your_new_app
-  cd your_new_app
   npm install
   npm start
 ```
@@ -97,17 +94,6 @@ Shared directory contains all the components, routes, actions and reducers.
 ### Client
 
 Index.js simply does client side rendering using the data provided from `window.__INITIAL_STATE__`.
-
-## Roadmap
-####MERN Starter
-- [ ] Add GraphQL to mern-starter
-- [ ] Add SCSS support
-- [ ] Improve file structure (needs discussion)
-
-####[MERN CLI](https://github.com/Hashnode/mern-cli)
-- [ ] Generators for Containers, Components, Routes, Reducers, Actions
-- [ ] Generators for Models, Router, Controllers
-- [ ] Add flags to CLI e.g. for adding lifecycle
 
 ## License
 MERN is released under the [MIT License](http://www.opensource.org/licenses/MIT).
